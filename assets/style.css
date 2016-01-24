@@ -64,6 +64,7 @@ p {
 .gap {
     background:transparent center no-repeat;
     background-size:cover;
+    font-size:0;
 }
 .skrollr .gap {
     background:transparent !important;
