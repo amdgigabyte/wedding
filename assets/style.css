@@ -19,6 +19,9 @@ body {
 p {
     margin:1em 0;
 }
+.center {
+    text-align: center;
+}
 @keyframes jump
 {
     0% {transform:translate3d(0px, 0, 0px)}
@@ -53,6 +56,10 @@ p {
     height:100%;
     top:-100%;
 }
+.parallax-image-wrapper-400 {
+    height:400%;
+    top:-400%;
+}
 .parallax-image {
     display:none;
     position:absolute;
@@ -72,6 +79,10 @@ p {
     top:-5%;
 }
 .parallax-image-100 {
+    height:100%;
+    top:0;
+}
+.parallax-image-400 {
     height:100%;
     top:0;
 }
