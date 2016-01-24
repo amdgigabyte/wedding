@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'wedding';
+    src: url('//at.alicdn.com/t/jq263hk98l5cow29.ttf') format('truetype')
+}
 * {
     padding:0;
     margin:0;
@@ -72,11 +75,15 @@ p {
     height:100%;
 }
 .header, .content {
-    background: #c172ff;
+    background: #AB70B2;
+    color:#fff;
     padding:1em;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
+}
+.header {
+    font-family:"wedding";
 }
 .content-full {
     height:100%;
