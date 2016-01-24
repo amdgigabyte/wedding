@@ -19,6 +19,21 @@ body {
 p {
     margin:1em 0;
 }
+@keyframes jump
+{
+    0% {transform:translate3d(0px, 0, 0px)}
+    50% {transform:translate3d(0, 5px, 0)}
+    100% {transform:translate3d(0px, 0, 0px)}
+}
+.scroll-bottom {
+    animation:jump 0.5s infinite;
+    color: #fff;
+    z-index: -1;
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
 .parallax-image-wrapper {
     position:fixed;
     left:0;
@@ -28,6 +43,10 @@ p {
 .parallax-image-wrapper-50 {
     height:50%;
     top:-50%;
+}
+.parallax-image-wrapper-80 {
+    height:90%;
+    top:-90%;
 }
 .parallax-image-wrapper-100 {
     height:100%;
@@ -46,6 +65,10 @@ p {
 .parallax-image-50 {
     height:200%;
     top:-50%;
+}
+.parallax-image-80 {
+    height:110%;
+    top:-5%;
 }
 .parallax-image-100 {
     height:100%;

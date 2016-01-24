@@ -9,13 +9,8 @@
 </head>
 
 <body>
-<!--
-    We position the images fixed and therefore need to place them outside of #skrollr-body.
-    We will then use data-anchor-target to display the correct image matching the current section (.gap element).
--->
-
 <div
-        class="parallax-image-wrapper parallax-image-wrapper-100"
+        class="parallax-image-wrapper parallax-image-wrapper-80"
         data-anchor-target="#dragons + .gap"
         data-bottom-top="transform:translate3d(0px, 200%, 0px)"
         data-top-bottom="transform:translate3d(0px, 0%, 0px)">
@@ -27,6 +22,9 @@
             data-bottom-top="transform: translate3d(0px, -80%, 0px);"
             data-top-bottom="transform: translate3d(0px, 80%, 0px);"
     ></div>
+    <div class="scroll-bottom">
+        v
+    </div>
     <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
 </div>
 
