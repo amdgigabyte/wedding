@@ -22,7 +22,8 @@ p {
 @keyframes jump
 {
     0% {transform:translate3d(0px, 0, 0px)}
-    50% {transform:translate3d(0, 8%, 0)}
+    30% {transform:translate3d(0, -8%, 0)}
+    80% {transform:translate3d(0, 8%, 0)}
     100% {transform:translate3d(0px, 0, 0px)}
 }
 .scroll-bottom {
