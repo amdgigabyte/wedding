@@ -20,7 +20,9 @@ gulp.task('default', function () {
                 './assets/images/star-03.png',
                 './assets/images/star-4.png',
                 './assets/images/star-5.png',
-                './assets/images/rain.png'
+                './assets/images/rain.png',
+                './assets/images/bg-blur-version.jpg',
+                './assets/icon.ttf'
             ]
         }))
         .pipe(gulp.dest('./'))
