@@ -11,8 +11,6 @@ gulp.task('default', function () {
             suffix: '-deploy',
             minify: true,
             base64: [  // 转换base64需要手工配置要转换的图片地址
-                './assets/images/cover.jpg',
-                './assets/images/pic08.jpg',
                 './assets/images/map01.jpg',
                 './assets/images/map02.jpg'
             ]
