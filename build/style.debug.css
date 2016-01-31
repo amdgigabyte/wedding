@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'wedding';
+  src: url('//at.alicdn.com/t/8n5x959xetn019k9.ttf') format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background: #AB70B2;
+}
+
+.skrollr-desktop body {
+  height: 100% !important;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+p {
+  margin: 1em 0;
+}
+
+.center {
+  text-align: center;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate3d(0px, 0, 0px);
+  }
+
+  30% {
+    transform: translate3d(0, -8%, 0);
+  }
+
+  80% {
+    transform: translate3d(0, 8%, 0);
+  }
+
+  100% {
+    transform: translate3d(0px, 0, 0px);
+  }
+}
+
+.scroll-bottom {
+  animation: jump 0.5s infinite;
+  color: #fff;
+  z-index: -1;
+  position: fixed;
+  bottom: 0.266667rem;
+  text-align: center;
+  width: 100%;
+}
+
+.parallax-image-wrapper {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.parallax-image-wrapper-50 {
+  height: 50%;
+  top: -50%;
+}
+
+.parallax-image-wrapper-80 {
+  height: 90%;
+  top: -90%;
+}
+
+.parallax-image-wrapper-100 {
+  height: 100%;
+  top: -100%;
+}
+
+.parallax-image-wrapper-400 {
+  height: 400%;
+  top: -400%;
+}
+
+.parallax-image {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax-image-50 {
+  height: 200%;
+  top: -50%;
+}
+
+.parallax-image-80 {
+  height: 110%;
+  top: -5%;
+}
+
+.parallax-image-100 {
+  height: 100%;
+  top: 0;
+}
+
+.parallax-image-400 {
+  height: 100%;
+  top: 0;
+}
+
+.parallax-image.skrollable-between {
+  display: block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+  display: none !important;
+}
+
+#skrollr-body {
+  height: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+.gap {
+  background: transparent center no-repeat;
+  background-size: cover;
+  font-size: 0;
+}
+
+#dituContent {
+  margin-top: 2rem;
+  font-size: 0;
+}
+
+.skrollr .gap {
+  background: transparent !important;
+}
+
+.gap-50 {
+  height: 50%;
+}
+
+.gap-100 {
+  height: 100%;
+}
+
+.header,
+.content {
+  background: #AB70B2;
+  color: #fff;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: "wedding";
+  font-size: 0.666667rem;
+}
+
+.title small {
+  font-size: 0.533333rem;
+}
+
+.content-full {
+  height: 100%;
+}
+
+#done {
+  height: 100%;
+}
+
+p {
+  font-size: 0.426667rem;
+  line-height: 0.533333rem;
+}

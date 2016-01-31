@@ -30,11 +30,15 @@
     "test": "grunt travis --verbose"
   },
   "devDependencies": {
-    "grunt-cli": "~0.1.7",
     "grunt": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-cli": "~0.1.7",
     "grunt-contrib-jshint": "~0.3.0",
-    "grunt-contrib-qunit": "~0.2.0"
+    "grunt-contrib-qunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "gulp": "^3.9.0"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "gulp-onehtml": "^0.3.2"
+  }
 }

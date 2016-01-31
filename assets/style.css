@@ -125,7 +125,7 @@ p {
 }
 .title {
     font-family: "wedding";
-    font-size: 36px;
+    font-size: 26px;
 }
 .title small {
     font-size:20px;
@@ -138,7 +138,6 @@ p {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 40px;
 }
-
