@@ -24,13 +24,13 @@
 	#center {
         /*background: rgba(255,111,142,0.85);*/
 		/*background:rgba(33,33,33,0.65);*/
-		background: rgba(255,255,255,.6);
+		background: rgba(255,255,255,.65);
 		padding:1em;
 		/*margin:1em auto;*/
 		/*border:1px solid #bbb;*/
         /*color:#333;*/
 		/*color:#fff;*/
-		color: #8f4ec7;
+		color: #6600cc;
         /*box-shadow: 3px 3px 3px #333;*/
 	}
 	.full-page {
@@ -44,6 +44,25 @@
 	.content {
 		margin-top:10px;
 	}
+	.star-1 {
+    	z-index: 100;
+		position: fixed;
+		top:25%;
+		left:5%;
+	}
+	.star-2 {
+		z-index: 100;
+		position: fixed;
+		top:29%;
+		left:6%;
+	}
+	.rain {
+		z-index: 100;
+		position: fixed;
+		opacity:1;
+		top:0%;
+		right:0%;
+	}
 	</style>
 </head>
 
@@ -54,7 +73,7 @@
 			<div class="full-page">
 				<hr/>
 				<div class="content">
-					各位亲朋好友: <br>
+					各位亲朋好友: <br />
 					在这温馨浪漫，喜悦甜蜜的日子，我们要结婚啦~
 				</div>
 				<div class="content">
@@ -85,16 +104,56 @@
 			</div>
 		</div>
 	</div>
+	<div class="rain" data-100="opacity:0;transform:scale(0);top:0%;right:10%;"
+	data-500="opacity:1;transform:scale(1);top:50%;right:55%;"
+	data-1000="opacity:0;transform:scale(0);top:120%;right:100%;">
+		<img src="./assets/images/rain.png" style="width:100%;" alt="" />
+	</div>
+	<div class="star-1" data-200="opacity:0;transform:scale(0) rotate(0deg);top:25%;left:5%;" data-500="opacity:1;transform:scale(1.2) rotate(180deg);top:35%;left:35%;"
+	data-800="opacity:1;transform:scale(1) rotate(360deg);top:55%;left:65%;"
+	data-1200="opacity:0;transform:scale(0) rotate(720deg);top:85%;left:85%;">
+		<img src="./assets/images/star-1.png" style="width:100%;" alt="" />
+	</div>
+	<div class="star-1" data-200="opacity:0;transform:scale(0) rotate(0deg);top:35%;left:5%;" data-500="opacity:0.7;transform:scale(1.2) rotate(180deg);top:45%;left:35%;"
+	data-800="opacity:1;transform:scale(1) rotate(360deg);top:65%;left:75%;"
+	data-1200="opacity:0;transform:scale(0) rotate(720deg);top:85%;left:95%;">
+		<img src="./assets/images/star-03.png" style="width:100%;" alt="" />
+	</div>
+	<div class="star-1" data-200="opacity:0;transform:scale(0) rotate(0deg);top:15%;left:5%;" data-500="opacity:0.7;transform:scale(1.2) rotate(180deg);top:25%;left:35%;"
+	data-800="opacity:1;transform:scale(1) rotate(360deg);top:60%;left:60%;"
+	data-1200="opacity:0;transform:scale(0) rotate(720deg);top:85%;left:75%;">
+		<img src="./assets/images/star-5.png" style="width:100%;" alt="" />
+	</div>
+	<div class="star-2" data-200="opacity:0;transform:scale(0) rotate(0deg);top:29%;left:6%;" data-500="opacity:0.7;transform:scale(1.2) rotate(180deg);top:33%;left:39%;"
+	data-700="opacity:1;transform:scale(1) rotate(360deg);top:50%;left:65%;"
+	data-1200="opacity:0;transform:scale(0) rotate(720deg);top:75%;left:20%;">
+		<img src="./assets/images/star-2.png" alt="" />
+	</div>
+	<div class="star-2" data-200="opacity:0;transform:scale(0) rotate(0deg);top:29%;left:6%;" data-500="opacity:0.7;transform:scale(1.2) rotate(180deg);top:40%;left:59%;"
+	data-700="opacity:1;transform:scale(1) rotate(360deg);top:59%;left:65%;"
+	data-1200="opacity:0;transform:scale(0) rotate(720deg);top:90%;left:20%;">
+		<img src="./assets/images/star-4.png" alt="" />
+	</div>
 	<script type="text/javascript" src="./assets/skrollr.min.js"></script>
 	<script type="text/javascript">
 	var aa = skrollr.init({
 		forceHeight: false
 	});
-	setInterval(function() {
+	setTimeout(function() {
 		aa.refresh();
 	},1000);
+	setTimeout(function() {
+		aa.refresh();
+	},3000);
+	setTimeout(function() {
+		aa.refresh();
+	},6000);
+	setTimeout(function() {
+		aa.refresh();
+	},9000);
+	setTimeout(function() {
+		aa.refresh();
+	},12000);
 	</script>
-
 </body>
-
 </html>
